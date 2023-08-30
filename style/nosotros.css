@@ -51,14 +51,14 @@ body {
 
 .titulo-text{
     font-size: 35px;
-    color: rgb(29, 204, 20);
-    text-shadow: 2px 2px 4px black;
+    color: white;
+    text-shadow: 2px 2px 7px black;
     margin-bottom: 20px;
     
 }
 
 .parrafo-text{
-    font-size: 22px;
+    font-size: 23px;
     padding: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
@@ -79,9 +79,6 @@ body {
 
 
 
-
-
-
 /* Footer */
 
 .footerGral {
@@ -98,14 +95,16 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
     padding: 20px;
+    
 }
 
 h4 {
-    color: rgb(29, 204, 20);
+    color: purple;
     justify-content: center;
     display: flex;
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 2px 2px 10px purple;
     margin-bottom: 40px;
+    font-size: 25px;
 }
 
 
@@ -117,11 +116,14 @@ h4 {
 .menu1 li {
     list-style: none;
     padding: 5px;
+    margin-left: -30px;
+    text-align: center;
 }
 
 .menu1 li a {
     padding: 5px;
     color: purple;
+    text-decoration: none;   
 }
 
 .menu1 li a:hover {
@@ -139,11 +141,14 @@ h4 {
 .menu2 li {
     list-style: none;
     padding: 5px;
+    margin-left: -30px;
+    text-align: center;
 }
 
 .menu2 li a {
     padding: 5px;
     color: purple;
+    text-decoration: none;   
 }
 
 .menu2 li a:hover {
@@ -168,16 +173,19 @@ h4 {
     width: 45px;
     height: 45px;
     line-height: 45px;
-    color: purple;
+    color:white;
     margin-right: 10px;
-    background-color: green;
+    background-color: purple;
     text-align: center;
 
 }
 
 .soporte-footer{
     padding: 20px;
+    
 }
+
+
 
 .caja-logo-footer img{
     width: 150px;
@@ -186,14 +194,20 @@ h4 {
 }
 
 
-@media (max-width: 420px){
+
+
+@media (max-width: 426px){
 
     .titulo-text{
-        text-align: center;   
+        text-align: center;
+        font-size: 27px;   
+
     }
 
     .parrafo-text{
-       padding: 15px;
+        padding: 5px 30px;
+       font-size: 18px;
+       text-align: center;
     }
 
     .caja-img img{
@@ -204,6 +218,12 @@ h4 {
     .footer2{
         grid-template-columns: 1fr;
         justify-items: center;
+        gap: 10px;
+    }
+
+    .caja-logo-footer{
+        flex-direction: column;
+        display: flex;
     }
 
 }
